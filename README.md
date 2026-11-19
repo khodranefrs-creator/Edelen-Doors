@@ -32,3 +32,16 @@ npm start
 - Business information (phone, address, showroom hours) and product URLs come from the client brief and the official Edelen website.
 - The consultation form is an honest frontend prototype: it validates input and shows a demo confirmation, but does not transmit or store data.
 - Customer quotations are reproduced from reviews published on Edelen’s Milgard C700 page and are attributed accordingly.
+
+## Competition presentation assets
+
+High-resolution source captures live in `C:\Users\user\Desktop\Edelen Doors Competition Presentation`.
+The submission-ready 800 × 640 / 300 DPI exports live in its `Competition_Ready_800x640_300DPI`
+subfolder, together with `verification_report.txt`.
+
+They can be regenerated after rebuilding and starting the production site:
+
+```bash
+npm run export:competition
+npm run verify:competition
+```
