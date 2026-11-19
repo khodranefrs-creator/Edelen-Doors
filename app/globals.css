@@ -17,7 +17,11 @@
 }
 
 :root {
-  --header-h: 88px;
+  --header-h: 118px;
+}
+
+@media (max-width: 1023px) {
+  :root { --header-h: 74px; }
 }
 
 html {

@@ -31,6 +31,7 @@ export const site = {
   images: {
     hero: '/assets/image-06.jpg',
     view: '/assets/image-11.jpg',
+    viewDetail: '/assets/image-01.jpg',
     editorial: '/assets/image-03.jpg',
     milgard: '/assets/image-08.webp',
     repair: '/assets/image-05.jpg',

@@ -4,22 +4,42 @@ import { site } from '@/lib/site';
 
 export default function ViewStatement() {
   return (
-    <section className="relative isolate flex min-h-[420px] items-center justify-center overflow-hidden bg-[#101a14] py-24 text-center text-white lg:min-h-[520px]">
-      <Image
-        src={site.images.view}
-        alt="Editorial architectural photograph of a bright, glazed interior"
-        fill
-        sizes="100vw"
-        className="object-cover"
-      />
-      <div className="absolute inset-0 bg-[#08120e]/55" />
-      <Reveal className="container-site relative z-10">
-        <p className="mb-7 text-[11px] font-semibold tracking-[0.3em] text-white/70 uppercase">The art of the view</p>
-        <p className="display-title mx-auto max-w-[900px] text-[clamp(2.2rem,4.2vw,4.1rem)]">
-          A home shaped by light. Framed for the landscape beyond.
-        </p>
-        <div className="mx-auto mt-9 h-px w-16 bg-white/60" />
-      </Reveal>
+    <section className="border-b border-line bg-paper py-20 lg:py-28" aria-labelledby="view-statement-title">
+      <div className="container-site grid items-center gap-12 lg:grid-cols-[1.12fr_0.88fr] lg:gap-24">
+        <Reveal>
+          <div className="mb-8 flex items-center gap-4">
+            <span className="eyebrow">Chapter 01</span>
+            <span className="h-px w-14 bg-line" />
+          </div>
+          <h2 id="view-statement-title" className="display-title text-[clamp(2.15rem,3.6vw,3.65rem)] text-ink">
+            A home shaped by light.
+            <br />
+            <span className="text-slate-mid">Framed for the landscape beyond.</span>
+          </h2>
+          <p className="mt-7 max-w-[540px] text-[15.5px] leading-relaxed text-ink-soft">
+            The right window does more than fill a room with daylight. It changes how a home feels — from the first light of morning to the last look outside at dusk.
+          </p>
+          <div className="mt-9 flex items-center gap-3 text-[12px] font-medium tracking-[0.1em] text-brand uppercase">
+            <span className="h-px w-8 bg-brand/50" />
+            The art of the view
+          </div>
+        </Reveal>
+
+        <Reveal delay={110}>
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-[420px] overflow-hidden bg-[#e9e7e2] lg:ml-auto">
+            <Image
+              src={site.images.viewDetail}
+              alt="Detail of the architectural photography collection"
+              fill
+              sizes="(max-width: 1024px) 100vw, 34vw"
+              className="object-cover object-[50%_45%]"
+            />
+            <div className="absolute right-0 bottom-0 bg-white px-6 py-5">
+              <p className="eyebrow !text-[10px]">Designed around the view</p>
+            </div>
+          </div>
+        </Reveal>
+      </div>
     </section>
   );
 }
